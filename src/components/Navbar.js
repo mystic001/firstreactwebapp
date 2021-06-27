@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {Link} from "react-router-dom";
 import {Button} from './Button';
 import './Navbar.css'
@@ -13,16 +13,19 @@ function Navbar(){
         else setButton(true)
     }
     const handleClick = ()=> setClick(!click)
-    const closeMobileMenu = ()=> console.log("clicked")
+    const closeMobileMenu = () => setClick(false)
   
-
+    useEffect(()=>{
+        showOrHideButton()
+    } ,[])
+   
     window.addEventListener("resize",showOrHideButton)
   
   return (
 <>
     <nav className="navbar">
         <div className="navbar-container">
-            <Link to="/" className="navbar-logo">
+            <Link to="/" className="navbar-logo" onClick = {closeMobileMenu}>
                 MYSTERIESHOUSE <i class="fas fa-grimace"></i>
             </Link>
         </div>
