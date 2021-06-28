@@ -1,0 +1,13 @@
+.footer-container{
+    background-color: #242424;
+    justify-content:center;
+    display: flex;
+    align-items:center;
+    padding:4rem 0 2rem 0;
+    flex-direction: column;
+}
+
+
+p{
+    color: #fff;
+}

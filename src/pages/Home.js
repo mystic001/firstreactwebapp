@@ -1,6 +1,7 @@
 import React from 'react';
 import HeroSection from '../components/HeroSection';
 import Cards from '../components/Cards';
+import Footer from '../components/Footer';
 
 function Home() {
     return (
@@ -8,6 +9,7 @@ function Home() {
         <div>   
         <HeroSection/>
         <Cards/>
+        <Footer/>
         </div>
         
     )
