@@ -22,4 +22,75 @@
   font-size: 30px;
 }
 
+.itemone{
+  grid-area: itemone;
+  background-color: blue;
+  }
+  
+  .itemtwo{
+    grid-area: itemtwo;
+    background-color: blue;
+  }
+  
+  .itemthree{
+  /*grid-area: itemthree;*/
+  background-color: blue;
+  }
+  
+
+.grid-containersecond{
+  display: grid;
+  grid-template-areas: 
+  "itemone itemone itemtwo"
+  "itemone itemone itemtwo"
+  "itemone itemone itemthree"
+  "itemone itemone itemthree";
+
+  grid-gap: 10px;
+  background-color: #25d81e;
+  padding: 10px;
+}
+
+
+.grid-containerthird{
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  grid-template-rows: 300px 300px;
+  grid-gap: 10px;
+  background-color: #dadada;
+  padding: 10px;
+}
+
+.box1{
+  background-color: #6109d4;
+
+}
+
+.box2{
+  background-color: #d40968;
+
+}
+
+.box3{
+  background-color: #5b5377;
+  grid-column-start: 1;
+  grid-column-end: 3;
+
+}
+
+.grid-containerfourth{
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  grid-template-rows: 300px 300px;
+  grid-gap: 10px;
+  background-color: #0af1d3c4;
+  padding: 10px;
+}
+
+
+.grid-containerfourth .box2{
+  grid-column:1/3;
+  
+  }
+
 
